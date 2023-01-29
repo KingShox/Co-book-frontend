@@ -1,0 +1,30 @@
+.sidenav{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    height: 50px;
+    padding: 10px;
+    justify-content: space-between;
+    width: auto;
+    color: white;
+}
+
+.company-logo{
+    font: bold;
+}
+.employee{
+    display: flex;
+    gap: 10px;
+
+}
+.employee img{
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+
+
+    
+}

@@ -1,0 +1,59 @@
+.search{
+    border-bottom: 1px solid gray;
+
+}
+.search-box{
+    padding: 10-px;
+}
+
+.search-box input{
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    width: 100%;
+    height: 50px;
+    margin-left: 10px;
+    font-size: large;
+
+
+}
+.search-box input ::placeholder{
+    font: bold;
+    
+    
+    
+
+}
+.employee-chat{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    cursor: pointer;
+    overflow: scroll;
+    
+}
+
+
+
+.employee-chat:hover{
+    background-color: black;
+}
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+.employee-chatInfo span{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.employee-chatInfo p{
+    font-size: 14px;
+    color: lightgray;
+}

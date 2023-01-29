@@ -1,0 +1,107 @@
+
+.button-1 {
+    align-items: center;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 900;
+    line-height: 1.5;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: 0;
+    border: 0;
+    padding: 1rem;
+    margin-top: 10px;
+    
+  }
+  
+  .button-1:before {
+    background-color: #fff;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    margin-right: 10px;
+    transition: all .42s cubic-bezier(.25,.8,.25,1);
+    width: 0;
+  }
+  
+  .button-1:hover:before {
+    background-color: #fff;
+    width: 3rem;
+  }
+
+
+.button-2 {
+    background:  #FFD700;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    width: 150px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(-21deg);
+    margin:15px ;
+  }
+  
+  .button-2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: rgb(20, 20, 20);
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+  
+  .button-2:hover {
+    color: #fff;
+  }
+  
+  .button-2:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+  .button-box{
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .button-3 {
+    background: #ce1d1d;
+    padding: 10px 50px 10px 30px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    border-radius: 80px;
+    text-transform: uppercase;
+    transition: all .5s ease-in-out;
+    border: none;
+  }
+  
+  .button-3:hover:before {
+    width: 79px;
+    height: 79px;
+    transform: translate(4.6pc, -1.8pc);
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzUycHQiIGhlaWdodD0iNzUycHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDc1MiA3NTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8cGF0aCBkPSJtMzc2IDE1MS4wNWMtNTkuNjYgMC0xMTYuODggMjMuNjk5LTE1OS4wNiA2NS44ODdzLTY1Ljg4NyA5OS40MDItNjUuODg3IDE1OS4wNmMwIDU5LjY2NCAyMy42OTkgMTE2Ljg4IDY1Ljg4NyAxNTkuMDdzOTkuNDAyIDY1Ljg4NyAxNTkuMDYgNjUuODg3YzM5LjQ4OCAwIDc4LjI4MS0xMC4zOTUgMTEyLjQ4LTMwLjEzNyAzNC4xOTUtMTkuNzQ2IDYyLjU5NC00OC4xNDUgODIuMzQtODIuMzQgMTkuNzQyLTM0LjE5NSAzMC4xMzctNzIuOTg4IDMwLjEzNy0xMTIuNDggMC01OS42Ni0yMy42OTktMTE2Ljg4LTY1Ljg4Ny0xNTkuMDZzLTk5LjQwMi02NS44ODctMTU5LjA3LTY1Ljg4N3ptLTQyLjYyMSAzNDMuMzUtMzMuMTUyLTMzLjU3OCA4NC41ODItODQuODItODQuNTgyLTg0LjgxNiAzMy4zOTEtMzMuNTc4IDExOC4zOSAxMTguMzl6IiBmaWxsPSIjZmZmIi8+Cjwvc3ZnPgo=");
+  }
+  
+  .button-3::before {
+    content: "";
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzUycHQiIGhlaWdodD0iNzUycHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDc1MiA3NTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8cGF0aCBkPSJtMjk1LjQ1IDYwMC45NSAyMjQuOTUtMjI0Ljk1LTIyNC45NS0yMjQuOTUtNjMuODQgNjMuODQgMTYxLjE2IDE2MS4xMS0xNjEuMTYgMTYxLjExeiIgZmlsbD0iI2ZmZiIvPgo8L3N2Zz4K");
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    transition: all .5s ease-in-out;
+    background-size: 100%;
+    transform: translate(6.3pc, 0.2pc);
+  }

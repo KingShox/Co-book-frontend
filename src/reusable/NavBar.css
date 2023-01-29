@@ -1,0 +1,62 @@
+
+
+.links{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    background: black;
+    width: 85px;
+    border-radius: 10px;
+    border-left: 5px solid black;
+}
+
+.links ul {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 45px;
+  }
+
+  .links ul li {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+
+  }
+ 
+  .links ul li a {
+    position: relative;
+    width: 100%;
+    display: flex;
+    text-orientation: none;
+    color: white;
+    line-height: 60px;
+    white-space: normal;
+  }
+  
+
+  .links ul li a .icon{
+    position: relative;
+    min-width: 60px;
+    height: 45px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 1.5em;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  
+.avatar  {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    margin-right: 25px;
+    margin-bottom: 40px;
+    object-fit: cover;
+  }
+
+
+

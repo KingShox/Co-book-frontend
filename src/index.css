@@ -1,3 +1,53 @@
+htm1,body{
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+*:not(head){
+  display: flex;
+}
+.flex-row{
+  flex-direction: row;
+}
+.flex-col{
+  flex-direction: column;
+}
+
+
+.gap{
+  gap: 10px;
+}
+.center{
+  justify-content: center;
+  align-items: center;
+}
+.left{
+  justify-content: left;
+  align-items:flex-start;
+}
+.right{
+  justify-content: right;
+  align-items: flex-end;
+}
+.fill-vertical{
+  flex: 1;
+  height: 100%;
+}
+.full-width {
+  width: 100%;
+}
+
+.third-width {
+  width: 33%;
+}
+.one-fourth-width{
+  width: 25%;
+}
+
+.margin-auto {
+  margin: auto;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +55,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  flex-direction: column;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#root {
+  width: 100%;
+  flex-direction: column;
+}
+
+
+

@@ -1,0 +1,52 @@
+.box-one{
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.top-text{
+    margin-bottom: 50px;
+    
+}
+.top-text h1{
+    color: black;
+}
+
+.box-two {
+    width: 80vw;
+    height: 75vh;
+    background: white;
+ background: linear-gradient(344deg, #ECF3F9 0%, white 50%);
+ box-shadow: 4px 6px 14px #00000036;
+ border-radius: 30px;
+ color:  rgb(40,40,55);
+ padding: 16px;
+ transition: all .3s;
+ justify-content: center;
+}
+
+.box-two:hover {
+    transform: translateY(-5px);
+    transition: all .01s ease-in-out;
+    box-shadow: -12px 12px 2px -1px;
+  }
+.box-3{
+    width: 100vw;
+    justify-content: center;
+    
+    
+}
+ 
+.label{
+    display: flex;
+    margin-top: 20px;
+    font-size:18px;
+    font-family: "Titillium Web", sans-serif;
+}
+.box-4{
+    width: 50vw;
+    
+}
