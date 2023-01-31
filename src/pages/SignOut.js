@@ -1,5 +1,5 @@
 import React from 'react'
-import NavBar from '../../reusable/NavBar'
+import NavBar from '../reusable/NavBar'
 
 function SignOut() {
   return (

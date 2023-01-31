@@ -1,39 +1,60 @@
 import './App.css';
-import SignIn from './component/SignIn';
+import SignInBox from './component/SignInBox';
 import CompanyRegister from './component/CompanyRegister';
-import CompnayChecker from './component/CompnayChecker';
+import CompanyChecker from './component/CompanyChecker';
 import EmployeeRegister from './component/EmployeeRegister';
-import Home from './component/pages/Home';
-import NavBar from './reusable/NavBar';
-import { Route, Routes } from 'react-router-dom';
-import Profile from './component/pages/Profile';
-import Messages from './component/pages/Messages';
-import Events from './component/pages/Events';
-import Employees from './component/pages/Employees';
-import Settings from './component/pages/Settings';
-import SignOut from './component/pages/SignOut';
-import PrivateRoutes from './component/PrivateRoutes';
+import Home from './pages/Home';
+import {Route, Routes } from 'react-router-dom';
+import Profile from './pages/Profile';
+import Messages from './pages/Messages';
+import Events from './pages/Events';
+import Employees from './pages/Employees';
+import Settings from './pages/Settings';
+import SignOut from './pages/SignOut';
+import PrivateRoute from './component/PrivateRoute';
+
+
 
 function App() {
+
+
   return (
-    <>
-        <Routes>
-          <Route path='/' element={<SignIn/>}/>
-          <Route path='/CompanyRegister' element={<CompanyRegister/>}/>
-          <Route path='/EmployeeRegister' element={<EmployeeRegister/>}/>
-          <Route path='/CompnayChecker' element={<CompnayChecker/>}/>
-        </Routes>
-        <PrivateRoutes>
-          <NavBar/>
-          <Route path='/home' element={<Home/>}/>
-          <Route path='/profile' element={<Profile/>}/>
-          <Route path='/messages' element={<Messages/>}/>
-          <Route path='/employees' element={<Employees/>}/>
-          <Route path='/events' element={<Events/>}/>
-          <Route path='/setting' element={<Settings/>}/>
-          <Route path='/signout' element={<SignOut/>}/>
-        </PrivateRoutes>
-    </>
+      <Routes >
+
+          <Route path='/' 
+          element={<SignInBox/> } />
+
+          <Route path='/companyRegister'  
+          element={<CompanyRegister />}/>
+
+          <Route path='/employeeRegister' 
+          element={<EmployeeRegister />} />
+
+          <Route path='/companyChecker' 
+          element={<CompanyChecker/>} />
+
+          <Route path='/home' 
+          element={<PrivateRoute><Home/></PrivateRoute>} />
+
+          <Route path='/profile' 
+          element={<PrivateRoute><Profile /></PrivateRoute>} />
+
+          <Route path='/messages' 
+          element={<PrivateRoute><Messages /></PrivateRoute>} />
+
+          <Route path='/employees' 
+          element={<PrivateRoute><Employees /></PrivateRoute>}/>
+
+          <Route path='/events' 
+          element={<PrivateRoute><Events /></PrivateRoute>} />
+
+          <Route path='/setting' 
+          element={<PrivateRoute><Settings/></PrivateRoute>} />
+
+          <Route path='/signout' 
+          element={<PrivateRoute><SignOut /></PrivateRoute>}/>
+          
+      </Routes>
   );
 }
 

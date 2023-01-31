@@ -1,10 +1,11 @@
 import React from 'react'
-import NavBar from '../../reusable/NavBar'
+import NavBar from '../reusable/NavBar'
 import {BiCalendarEdit} from 'react-icons/bi'
 
 function Events() {
   return (
     <div className='center'>
+      <NavBar/>
         
         <div>
         <div><BiCalendarEdit/></div>
