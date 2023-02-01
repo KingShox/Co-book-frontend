@@ -4,11 +4,13 @@ import Button from '../reusable/Button'
 import Input from '../reusable/Input'
 
 function CompanyRegister() {
+
+
   return (
     <div className='box-one'>
         <div className='box-two flex-col center'>
         <div >
-        <h1 className='flex-col'> + Company Register <i class="fa-solid fa-book-quran"></i></h1>
+        <h1 className='flex-col'> + Company Register </h1>
         </div>
         <div className=' box-3 flex-col center'>
                 <Input className={"input-1"} type={'text'} placeholder={'Company Name:'}/>

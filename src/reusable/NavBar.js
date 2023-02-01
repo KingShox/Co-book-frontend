@@ -7,7 +7,12 @@ import {GoGear,GoSignOut} from 'react-icons/go'
 
 
 
+
 function NavBar() {
+
+
+
+  
 
   return (
     <div className='nav-box'>
@@ -54,7 +59,6 @@ function NavBar() {
           <li className='list'>
             <a href='/signout'>
               <div className='icon'><GoSignOut/></div>
-              
             </a>
           </li>
         </ul>

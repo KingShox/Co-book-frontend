@@ -5,14 +5,14 @@
     outline: none;
     border-bottom: 2px solid #3f3f3f;
     caret-color: #3f3f3f;
-    background-color: #212121;
+    background-color: white;
     padding: 5px;
     transition: .5s linear;
     font-family: monospace;
     letter-spacing: 1px;
     border-radius: 10px;
     margin: 5px;
-    color: #FFD700;
+    color: black;
     box-sizing: initial;
     transition: 0.5s;
 
@@ -22,12 +22,18 @@
   .input-1:focus {
     border: 2px solid #FFD700;
     caret-color: #FFD700;
-    color: #FFD700;
+    color: black;
     box-shadow: 4px 4px 10px #070707;
   }
   
   .input-1:focus::placeholder {
-    color: #FFD700;
+    color: balck;
+  }
+  .input-1:focus {
+    border: 2px solid black;
+    caret-color: black;
+    color: black;
+    box-shadow: 4px 4px 10px #070707;
   }
   .input-2{
     height: 50px;
@@ -39,12 +45,7 @@
 
   }
 
-  .input-1:focus {
-    border: 2px solid #FFD700;
-    caret-color: #FFD700;
-    color: #FFD700;
-    box-shadow: 4px 4px 10px #070707;
-  }
+  
   .input-2:focus::placeholder {
     color: #FFD700;
   }

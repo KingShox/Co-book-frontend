@@ -10,8 +10,8 @@ import Messages from './pages/Messages';
 import Events from './pages/Events';
 import Employees from './pages/Employees';
 import Settings from './pages/Settings';
-import SignOut from './pages/SignOut';
-import PrivateRoute from './component/PrivateRoute';
+import PrivateRoute from './component/PrivateRoute'
+import SignOut from './pages/SignOut'
 
 
 
@@ -20,6 +20,7 @@ function App() {
 
   return (
       <Routes >
+        
 
           <Route path='/' 
           element={<SignInBox/> } />
@@ -53,7 +54,7 @@ function App() {
 
           <Route path='/signout' 
           element={<PrivateRoute><SignOut /></PrivateRoute>}/>
-          
+
       </Routes>
   );
 }

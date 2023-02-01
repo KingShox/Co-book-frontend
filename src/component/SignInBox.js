@@ -2,14 +2,11 @@ import React, { useState } from 'react'
 import '../component/Register.css'
 import Button from '../reusable/Button'
 import Input from '../reusable/Input'
-import CompanyRegister from './CompanyRegister' 
-import CompnayChecker from './CompanyChecker'
-import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
 function SignInBox(props) {
-  
-  const navigate = useNavigate();
+  const pageJumper = useNavigate()
   const [employee, setEmployee] = useState({
     companyEmail : "",
     password: ""
@@ -23,19 +20,25 @@ function SignInBox(props) {
     setEmployee(tempEmployee)
   }
  
-  const submitHandler = () =>{
+  const submitHandler = (event) =>{
     axios.post("http://localhost:8080/signInEmployee", employee)
     .then((response) =>{
-      console.log(response.data)
-      localStorage.setItem("companyEmail", response.data.companyEmail)
-
-      navigate("/home")
+      localStorage.setItem("companyEmail", response.data.companyEmail) 
+      pageJumper("/home")
 
     }).catch((e) =>{
       console.log(e)
     })
 
   }
+
+  const companyRegisterHandler = ()=>{
+    pageJumper("/companyRegister")
+  }
+  const companyCheckerHandler = ()=>{
+      pageJumper("/companyChecker")
+  }
+  
   
   return (
     <div className='box-one'>
@@ -53,8 +56,8 @@ function SignInBox(props) {
                 <Button className={'button-1'}type="submit" text={'Log In'} onClick={submitHandler} />
         </div>
           <div className='full-width center flex-col gap'>
-            <Button className={'button-2'} type="submit" text={'+ Conpmany Register'} on click/>
-            <Button className={'button-2'} />
+            <Button className={'button-2'} type="submit" text={'+ Conpmany Register'} onClick={companyRegisterHandler}/>
+            <Button className={'button-2'} type="sumbit" text={"+ Employee Register"} onClick={companyCheckerHandler}/>
           </div>
         </div>
     </div>

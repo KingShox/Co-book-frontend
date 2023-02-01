@@ -8,13 +8,17 @@ import './Messages.css'
 
 function Messages() {
   return (
+    <>
+    <NavBar/>
     <div className='chat-box flex-col'>
       <div className='container'>
+
         <NavBar/>
         <SideBar/>
         <SideChatBox/>
       </div>
     </div>
+    </>
   )
 }
 

@@ -18,7 +18,7 @@ const SideChatBox = () => {
         </div>
             <div className='flex-col'>
             <SideMessages/>
-            <div classname='send-text'>
+            <div className='send-text'>
                 <input placeholder="Type:" />
                 <button>Send:</button>
             </div>
