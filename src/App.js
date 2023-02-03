@@ -1,27 +1,36 @@
 import './App.css';
-import SignInBox from './component/SignInBox';
-import CompanyRegister from './component/CompanyRegister';
-import CompanyChecker from './component/CompanyChecker';
-import EmployeeRegister from './component/EmployeeRegister';
-import Home from './pages/Home';
+import SignInBox from './pages/register/component/SignInBox';
+import CompanyRegister from './pages/register/component/CompanyRegister';
+import CompanyChecker from './pages/register/component/CompanyChecker';
+import EmployeeRegister from './pages/register/component/EmployeeRegister';
+import Home from './pages/home/component/Home';
 import {Route, Routes } from 'react-router-dom';
-import Profile from './pages/Profile';
-import Messages from './pages/Messages';
-import Events from './pages/Events';
-import Employees from './pages/Employees';
-import Settings from './pages/Settings';
-import PrivateRoute from './component/PrivateRoute'
-import SignOut from './pages/SignOut'
-
+import Profile from './pages/profile/component/Profile';
+import Talk from './pages/talk/component/Talk';
+import Employees from './pages/employees/component/Employees';
+import Settings from './pages/setting/component/Settings';
+import { useContext } from 'react';
+import { AuthContext } from './context/AuthContext';
+import { Navigate } from 'react-router-dom';
+import News from './/pages/news/component/News';
 
 
 function App() {
 
+  
+  const {currentUser} = useContext(AuthContext)
+  const PrivateRoute = ({children}) => {
+    
+        if(currentUser === null){
+            return <Navigate to="/" />
+        }
+        return children
+  }
+
 
   return (
       <Routes >
-        
-
+  
           <Route path='/' 
           element={<SignInBox/> } />
 
@@ -40,20 +49,17 @@ function App() {
           <Route path='/profile' 
           element={<PrivateRoute><Profile /></PrivateRoute>} />
 
-          <Route path='/messages' 
-          element={<PrivateRoute><Messages /></PrivateRoute>} />
+          <Route path='/talk' 
+          element={<PrivateRoute><Talk /></PrivateRoute>} />
 
           <Route path='/employees' 
           element={<PrivateRoute><Employees /></PrivateRoute>}/>
 
-          <Route path='/events' 
-          element={<PrivateRoute><Events /></PrivateRoute>} />
+          <Route path='/news' 
+          element={<PrivateRoute><News /></PrivateRoute>} />
 
           <Route path='/setting' 
           element={<PrivateRoute><Settings/></PrivateRoute>} />
-
-          <Route path='/signout' 
-          element={<PrivateRoute><SignOut /></PrivateRoute>}/>
 
       </Routes>
   );

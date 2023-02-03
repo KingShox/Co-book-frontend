@@ -1,0 +1,12 @@
+.event-box{
+    width: 40vw;
+    height: 80vh;
+    background: white;
+    background: linear-gradient(344deg, #ECF3F9 0%, white 50%);
+    box-shadow: 4px 6px 14px #00000036;
+    border-radius: 30px;
+    color:  rgb(40,40,55);
+    padding: 16px;
+    transition: all .3s;
+    justify-content: center;
+}

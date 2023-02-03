@@ -1,25 +1,23 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './NavBar.css'
 import * as FaIcons from 'react-icons/fa'
 import {TbMessage2} from 'react-icons/tb'
 import {GoGear,GoSignOut} from 'react-icons/go'
-
-
-
+import {auth} from '../FireBase'
+import { signOut } from 'firebase/auth'
+import { AuthContext } from '../context/AuthContext'
 
 
 function NavBar() {
 
-
-
-  
+  const {currentUser} = useContext(AuthContext)
 
   return (
     <div className='nav-box'>
       <div className='links'>
         <ul className='flex-col'>
         <div className='center flex-col'>
-        <a href='/profile'><img className='avatar' src='https://www.pngkit.com/png/detail/45-450450_portfolio-patrick-starfish-pictures-patrick-star-season-patrick.png' alt='profile'></img></a>
+        <a href='/profile'><img className='avatar' src={currentUser.photoURL} alt='profile'></img></a>
         </div>
           <li className ='list active'>
             <a href='/home'>
@@ -33,7 +31,7 @@ function NavBar() {
             </a>
           </li>
           <li className='list'>
-            <a href='/messages'>
+            <a href='/talk'>
               <div className='icon'><TbMessage2/></div>
               
             </a>
@@ -45,7 +43,7 @@ function NavBar() {
             </a>
           </li>
           <li className='list'>
-            <a href='/events'>
+            <a href='/news'>
               <div className='icon'><FaIcons.FaCalendarAlt/></div>
               
             </a>
@@ -57,10 +55,11 @@ function NavBar() {
             </a>
           </li>
           <li className='list'>
-            <a href='/signout'>
-              <div className='icon'><GoSignOut/></div>
-            </a>
+            <button className='signout' onClick={()=>signOut(auth)}>
+              <GoSignOut/>
+            </button>
           </li>
+
         </ul>
       </div>  
     </div>
