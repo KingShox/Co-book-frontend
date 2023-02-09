@@ -2,11 +2,61 @@
     width: 40vw;
     height: 80vh;
     background: white;
-    background: linear-gradient(344deg, #ECF3F9 0%, white 50%);
-    box-shadow: 4px 6px 14px #00000036;
+    background: linear-gradient(344deg, white 0%, white 50%);
     border-radius: 30px;
     color:  rgb(40,40,55);
     padding: 16px;
     transition: all .3s;
     justify-content: center;
+    background-image: url(https://images.all-free-download.com/images/graphiclarge/party_balloons_background_311229.jpg);
+    background-size: cover;
+}
+.title-box{
+    width: 150px;
+    height: 10px;
+    padding: 0;
+}
+.picture{
+    height: 500px;
+    width: 500px;
+}
+
+.detail-box{
+    height: 100%;
+    width: 300px;
+    margin-left: 170px;
+}
+.event-gap{
+   gap: 5px;
+}
+.detail-input{
+    height: 100px;
+    width: 300px;
+    background-color:gainsboro;
+    border: none;
+    font-size: small;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+
+
+}
+.detail-input:focus{
+    outline-color: firebrick;
+
+}
+
+
+
+.event-input2 {
+    background-color: white;
+    border: none;
+    height: 25px;
+    border-radius: 5px;
+    color: black;
+    text-align: start;
+   }
+   
+.event-input2:focus {
+    outline-color:firebrick;
 }

@@ -1,0 +1,10 @@
+.title{
+    height: 8%;
+    width: 100%;
+}
+.title-gap{
+    gap: 30px;
+}
+.left{
+    margin-left: 80px;
+}

@@ -15,6 +15,7 @@ import { Navigate } from 'react-router-dom';
 import News from './/pages/news/component/News';
 
 
+
 function App() {
 
   
@@ -30,7 +31,7 @@ function App() {
 
   return (
       <Routes >
-  
+    
           <Route path='/' 
           element={<SignInBox/> } />
 

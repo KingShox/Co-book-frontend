@@ -1,0 +1,41 @@
+.profile{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-content{
+    border-radius: 20px;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+
+}
+.profile-title{
+    margin: 0;
+}
+.profile-body{
+    padding: 10px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.profile-button{
+    transform: translate(-50%, 125%);
+    border-radius: 15px;
+    background-color: #008bf8;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+  
+    
+}

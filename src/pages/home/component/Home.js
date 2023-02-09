@@ -1,13 +1,19 @@
 import React from 'react'
 import NavBar from '../../../reusable/NavBar'
+import EventComponent from './EventComponent'
+import NewsComponent from './NewsComponent'
+import '../css/Home.css'
 
 
 
 function Home() {
   return (
-    <div className='center'>
+    <div className='center  ' >
       <NavBar/>
-    <h1 className='flex-col'>CoBook.</h1>
+      <div className='flex-col gap homeTop homeLeft'>
+        <EventComponent/>
+        <NewsComponent/>
+      </div>
     </div>
     
    

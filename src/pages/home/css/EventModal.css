@@ -1,0 +1,60 @@
+.eventModal{
+    width: 100vw;
+    height: 100vh;
+    overflow:auto;
+    top: 0;
+    left: 20px;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.eventModal-content{
+    border-radius: 20px;
+    width: 500px;
+    height: 500px;
+    background-color: #c3c6ce;
+    
+
+}
+.eventModal-title{
+    margin: 0;
+}
+.eventModal-body{
+    padding: 10px;
+   
+}
+.eventModal-button{
+    
+    border-radius: 15px;
+    background-color: #008bf8;
+    color: #fff;
+    font-size: x-large;
+    border: none;
+   
+  
+    
+}
+.eventModal-button2{
+    border-radius: 15px;
+    background-color: red;
+    color: #fff;
+    font-size: x-large;
+    border: none;
+}
+.eventModal-button3{
+    border-radius: 15px;
+    background-color: green ;
+    color: #fff;
+    font-size: x-large;
+    border: none;
+}
+.eventModal-content:hover{
+    border-color: #008bf8;
+   
+}
+
